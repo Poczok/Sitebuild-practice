@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+.background-picture {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: white;
+}
+.background-picture::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 75%);
+}
+.img-size {
+  height: 35vh;
+  width: 90%;
+}
+
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+.p-tag {
+  font-size: 30px;
+  font-family: 'Russo One', sans-serif;
+}
+.white {
+  color: white;
+}
+.circle {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-max-size {
+  height: 55vh;
+}
+.nav-title {
+  font-size: 30px;
+  font-family: 'Lexend Peta', sans-serif;
+}
+.navbar {
+  position: relative;
+  z-index: 10;
+}
+.carousel {
+  position: relative;
+  z-index: 10;
+}
+.home {
+  position: relative;
+}
+.home::before {
+  content: "\f015";
+  top: 5px;
+  left: -20px;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.hippo {
+  position: relative;
+}
+.hippo::before {
+  content: "\f6ed";
+  top: 5px;
+  left: -20px;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.money {
+  position: relative;
+}
+.money::before {
+  content: "\f53a";
+  top: 5px;
+  left: -20px;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.welcome-text {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 80px;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: green;
+}
+.footer-element-container {
+  width: 33%;
+  padding: 10px;
+}
+.slide-width {
+  width: 50%;
+}
+.footer-paragraph {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.google-pic-container {
+  width: 100%;
+  max-width: 280px;
+}
+.hidden-on-sm {
+  display: inline;
+}
+.menu-item-margin {
+  margin-right: 20px;
+}
+.carousel-active-page {
+  font-size: 35px;
+}
+.carousel-font {
+  font-family: 'Indie Flower', cursive;
+}
+@media all and (max-width: 540px) {
+  .slide-width {
+    width: 100%;
+  }
+  .hidden-on-sm {
+    display: none;
+  }
+}
+@media all and (max-width: 720px) {
+  .footer-paragraph {
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  .footer-element-container {
+    width: 33%;
+    padding: 5px;
+  }
+  .menu-item-margin {
+    margin-right: 0px;
+  }
+}
